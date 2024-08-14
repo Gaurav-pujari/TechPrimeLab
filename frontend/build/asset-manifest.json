@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04f1966a.css",
+    "main.js": "/static/js/main.e66582d8.js",
+    "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
+    "static/media/Logo.svg": "/static/media/Logo.68f1f5b25b516ffa9c25f44d76396632.svg",
+    "static/media/Dashboard-active.svg": "/static/media/Dashboard-active.fa38cfb262a20cc4c367bc06812dc8f5.svg",
+    "static/media/Dashboard.svg": "/static/media/Dashboard.75392f4b4e7eb7aba96a513c4250efc8.svg",
+    "static/media/Project-list.svg": "/static/media/Project-list.77ee29f452038e164cc3ab932878c21d.svg",
+    "static/media/Project-list-active.svg": "/static/media/Project-list-active.d8c86037a47e33bf72d52ccaca53585c.svg",
+    "static/media/Logout.svg": "/static/media/Logout.8886ae296fe0e8ecdd12341399948def.svg",
+    "static/media/Header-bg.svg": "/static/media/Header-bg.d6856982acf0531fb5b0.svg",
+    "static/media/create-project-active.svg": "/static/media/create-project-active.bfee01bde4571ca67163c236c80d3642.svg",
+    "static/media/create-project.svg": "/static/media/create-project.21a4622a59b51762034b66b1e41b1cde.svg",
+    "index.html": "/index.html",
+    "static/media/Oval.svg": "/static/media/Oval.542c10108de764f48241.svg",
+    "main.04f1966a.css.map": "/static/css/main.04f1966a.css.map",
+    "main.e66582d8.js.map": "/static/js/main.e66582d8.js.map",
+    "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04f1966a.css",
+    "static/js/main.e66582d8.js"
+  ]
+}
