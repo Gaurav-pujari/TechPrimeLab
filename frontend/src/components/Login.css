@@ -1,0 +1,267 @@
+@media (min-width:730px){
+
+
+.titles {
+    height: 22px;
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px;
+    padding-left: 587px;
+    padding-right: 580px;
+    padding-bottom: 20px;
+    z-index: 3;
+    position: relative;
+
+}
+
+.login-container {
+   
+    height: 422px;
+    width: 410px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 7px 18px 0 rgba(2,118,179,0.13);
+    text-align: left;
+    margin: auto;
+    padding-bottom:132px;
+    position: relative;
+    z-index: 3;
+}
+
+.logO{
+    padding-top: 70px;
+    padding-left: 641px;
+    padding-right: 640px;
+    z-index: 3;
+    position: relative;
+}
+
+.headingss{
+    text-align: center;
+    height: 27px;
+    padding-bottom: 60px;
+    padding-top: 50px;
+    padding-left: 112px;
+    padding-right: 122px;  
+    color: #3F3F3F;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 27px;
+ 
+}
+
+
+a {
+    padding-left: 250px;
+    padding-right: 37px;
+    text-decoration: none;
+}
+
+
+
+.body{
+        height: 472px;
+        width: 1487px;
+        border-radius: 0 0 0 87px;
+         background: linear-gradient(274.88deg, #0474DA 0%, #044E92 100%);       
+         position: relative; 
+}
+.oval{
+    background-image: url("./Oval.svg");
+    margin-left: 920px;
+    background-repeat: no-repeat;
+    height: 626px;
+    width: 647px;
+    opacity: 0.29;
+    align-content: end;
+    border-radius: 50%;
+    background-color: #389AF3;
+    position: absolute;
+    transform: translate(-50%, -30%);
+    z-index: 1;
+   
+}
+
+
+.login-button {
+    height: 36px;
+  width: 169px;
+    display: block;
+    margin: 0 auto;
+    background-color: #035FB2;
+    color: #fff;
+    border-color:#fff;
+    border-radius: 18px;
+   
+}
+.invalid-input{
+    color: red;
+    padding-left:40px;   
+}
+.invalid-inputs{
+    color: red;
+  
+}
+.form-label.error {
+    color: red;
+}
+.form-control.error{
+    border-color: red;
+}
+p{
+    margin-top: 15px;
+}
+.mb{
+    padding-bottom: 10px;
+}
+.form-control{
+    width:337px;
+    height:48px;
+    margin: auto;
+    border: 1px solid #979797;
+    border-radius: 6px;
+}
+.form-label{
+    padding-left: 37px;
+    padding-right: 399px;
+    color: #767676;
+}
+
+}
+
+@media(max-width:431px){
+    
+    .oval{
+        background-image: url("./Oval.svg");
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 310px;
+         opacity: 0.29; 
+        border-radius: 50%;
+        background-color: #389AF3;
+        position: absolute;
+        transform: translate(40%, -38%);
+        z-index: 1;
+    }
+    input[type="email"]{
+        width: 70%;
+      margin: auto;
+ 
+    }
+    input[type="password"]{
+        width: 70%;
+        margin: auto;
+   
+
+    }
+    .body{
+
+        justify-content:center;
+      
+    }
+    .login-container{
+      
+        background-color: #FFFFFF;
+        height: 370px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 150px;
+       
+       
+          
+     
+    }
+   .header-bg{
+    height:300px;
+    width: 460px;
+    border-radius: 0 0 0 87px;
+     background: linear-gradient(274.88deg, #0474DA 0%, #044E92 100%);     
+  
+
+   
+   }
+   .titles{
+    color: #FFFFFF;
+    margin-top: -150px;
+    position: relative;
+    z-index: 3;
+
+ 
+ 
+   }
+  .logO{
+    padding-top: 50px;
+    position:relative;
+    z-index: 3;
+   
+  }
+  a{
+
+    padding-left:40%;
+    text-decoration: none;
+  }
+  .login-button{
+    margin-top: 20px;
+    height: 36px;
+    width: 328px;
+    background-color: #035FB2;
+  color: #fff;
+  border-color:#fff;
+  border-radius: 15px;
+  margin-left: 30px;
+
+}
+.headingss{
+    margin-right: 143px;
+    height: 27px;
+
+    color: #3F3F3F;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 27px;
+}
+.mb{
+    padding-bottom: 20px;
+}
+.col-6 {
+    flex: 0 0 auto;
+    width: 90%;
+}
+
+.form-control{
+    border: 1px solid #979797;
+    border-radius: 6px;
+}
+.form-label{
+    margin-right:233px;
+    height: 19px;
+    width: 34px;
+    color: #767676;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19px;
+}
+.invalid-input{
+    color: red;
+       
+}
+.form-label.error {
+    color: red;
+
+}
+.form-control.error{
+    border-color: red;
+}
+.invalid-input{
+    margin-right: 190px;
+}
+.invalid-inputs{
+    margin-right:170px;
+    color: red;
+}
+}
