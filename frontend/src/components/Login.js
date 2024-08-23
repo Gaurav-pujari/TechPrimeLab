@@ -87,7 +87,7 @@ const Onsubmit = async (e) => {
               value={email}
               onChange={(e) => setemail(e.target.value)}
             />
-            {error && !email &&<span className="invalid-input">Email is required </span>}
+            {error && !email &&<div className="invalid-input">Email is required </div>}
           </div>
           <div className="mb">
             <label forname="exampleInputPassword1"className={`form-label ${error && !password ? 'error' : ''}`}>
@@ -100,7 +100,7 @@ const Onsubmit = async (e) => {
               value={password}
               onChange={(e) => setpassword(e.target.value)}
             />
-             {error && !password &&<span className="invalid-input">Password is required </span>}
+             {error && !password &&<div className="invalid-input">Password is required </div>}
           </div>
           <div className="mb">
             <a href="#">ForgetPassword?</a>
