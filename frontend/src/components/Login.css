@@ -98,6 +98,7 @@ a {
 .invalid-input{
     color: red;
     padding-left:40px;   
+    height:2px;
 }
 .invalid-inputs{
     color: red;
@@ -217,7 +218,7 @@ p{
     height: 27px;
 
     color: #3F3F3F;
-    font-family: "Nunito Sans";
+
     font-size: 20px;
     letter-spacing: 0;
     line-height: 27px;
@@ -239,7 +240,6 @@ p{
     height: 19px;
     width: 34px;
     color: #767676;
-    font-family: "Nunito Sans";
     font-size: 14px;
     letter-spacing: 0;
     line-height: 19px;
