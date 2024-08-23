@@ -46,6 +46,10 @@ header {
   padding-right: 20px;
 
 }
+td.themeprojectname {
+  text-align: left;
+  padding-left: 20px;
+}
 
 
 .search-input {
@@ -56,6 +60,7 @@ header {
   border-top: none;
   border-left: none;
   border-right: none;
+  border-bottom: 1px solid #979797;
 }
 
 .Sortype{
@@ -82,6 +87,7 @@ text-align: center;
    flex-wrap: wrap;
   
 }
+
 .tables {
   width: 100%;
   border-collapse: collapse;
@@ -106,12 +112,7 @@ thead tr{
 tr{
   height: 70px;
 }
-.dates {
-  display: flex;
-justify-content: center;
 
-
-}
 
 .startDate,
 .endDate {
@@ -127,31 +128,50 @@ justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
   width: 100%;
   height: 30px;
 }
+.page-item.active {
+
+  color: #0CC9E8;           
+ 
+}
+.pagination{
+  --bs-pagination-active-bg: #0CC9E8;
+  --bs-pagination-active-border-color: #0CC9E8;
+
+}
+.page-link{
+   background-color:#eeeeee;
+   color: black;
+}
+
+
+
 .startbutton {
-	background-color:#025AAB; /* Blue color for the "Start" button */
-  border-color: white; /* Ensure the border matches */
+	background-color:#025AAB;
+  border-color: white; 
   color: white; 
   width: 100%;
-  border-radius: 30px;/* Ensure text is visible */
+  border-radius: 30px;
 }
 .closebutton{
  
-  border-color: #025AAB; /* Ensure the border matches */
+  border-color: #025AAB;
   color:#025AAB; 
   border-radius: 50px;
   background-color:white;
-  width: 100%;/* Ensure text is visible */
+  width: 100%;
 }
 
 
+
 .cancelledbutton{
-  border-color: #025AAB; /* Ensure the border matches */
+  border-color: #025AAB; 
   color:#025AAB; 
   background-color:white;
-  border-radius: 50px;/* Ensure text is visible */
+  border-radius: 50px;
 }
 .backarrowimg{
   width: 35px;
@@ -174,9 +194,7 @@ justify-content: center;
   padding-top: 90px;
  
 }
-.paging{
-  margin-top: 10px;
-}
+
 }
 
 
