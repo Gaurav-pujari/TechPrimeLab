@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Backarrow from './backarrow.png';
 import LogOut from './Logout.svg';
 import { useNavigate } from "react-router-dom";
+import SearchIcon from "./search.svg";
 
 export default function ProjectList() {
 
@@ -142,6 +143,50 @@ export default function ProjectList() {
   const first = last - counts;
   const paginatedProducts = products.slice(first, last);
 
+
+  const reverseDate = (dateString) => {
+    const [year, month, day] = dateString.split('-');
+    if(month==="01"){
+      return `${"Jan"}-${day}-${year}`;
+    }
+
+    if(month==="02"){
+      return `${"Feb"}-${day}-${year}`;
+    }
+    if(month==="03"){
+      return `${"Mar"}-${day}-${year}`;
+    }
+    if(month==="04"){
+      return `${"Apr"}-${day}-${year}`;
+    }
+
+    if(month==="05"){
+      return `${"May"}-${day}-${year}`;
+    }
+    if(month==="06"){
+      return `${"June"}-${day}-${year}`;
+    }
+    if(month==="07"){
+      return `${"July"}-${day}-${year}`;
+    }
+    if(month==="08"){
+      return `${"Aug"}-${day}-${year}`;
+    }
+    if(month==="09"){
+      return `${"Sept"}-${day}-${year}`;
+    }
+    if(month==="10"){
+      return `${"Oct"}-${day}-${year}`;
+    }
+    if(month==="11"){
+      return `${"Nov"}-${day}-${year}`;
+    }
+    else{
+      return `${"Dec"}-${day}-${year}`;
+    }
+    
+  };
+
   return (
     <>
       {windowWidth >= 730 && <Sidebar />}
@@ -166,7 +211,8 @@ export default function ProjectList() {
       <form className="forms">
         <div className="project-list-container">
           <div className="search-dropdown-container">
-            <input type="text" placeholder="Search" className="search-input" onChange={searchHandle} />
+
+            <input type="text"  placeholder="Search" className="search-input" onChange={searchHandle} />
             <label className="Sortype">SortType:</label>
             <select className="dropdown" onChange={DropDownList} value={dropdownData}>
               <option value="Priority">Priority</option>
@@ -201,20 +247,20 @@ export default function ProjectList() {
             <tbody>
               {paginatedProducts.map((product, index) => (
                 <tr key={index}>
-                  <td className="themeprojectname">
-                    {product.ThemeProject}
+                  <td  style={{ color: "#414950" }}className="themeprojectname">
+                    <b>{product.ThemeProject}</b>
                     <div className="dates">
-                      <span className="startDate mx-2"> {product.StartDate}</span> to
-                      <span className="endDate mx-2"> {product.EndDate}</span>
+                      <span className="startDate mx-2"> {reverseDate(product.StartDate)}</span> to
+                      <span className="endDate mx-2"> {reverseDate(product.EndDate)}</span>
                     </div>
                   </td>
-                  <td className="Reason"><p className="labels_table">Reason:</p>{product.Reason}</td>
-                  <td className="Type"><p className="labels_table">Type:</p>{product.Type}</td>
-                  <td className="Division"><p className="labels_table">Div:</p>{product.Division}</td>
-                  <td className="Category"><p className="labels_table">Category:</p>{product.Category}</td>
-                  <td className="Priority"><p className="labels_table">Priority:</p>{product.Priority}</td>
-                  <td className="Department"><p className="labels_table">Dept:</p>{product.Department}</td>
-                  <td className="Location"><p className="labels_table">Location:</p>{product.Location}</td>
+                  <td style={{ color: "#3F3F3F" }} className="Reason"><p className="labels_table">Reason:</p>{product.Reason}</td>
+                  <td style={{ color: "#3F3F3F" }} className="Type"><p className="labels_table">Type:</p>{product.Type}</td>
+                  <td style={{ color: "#3F3F3F" }} className="Division"><p className="labels_table">Div:</p>{product.Division}</td>
+                  <td  style={{ color: "#3F3F3F" }}className="Category"><p className="labels_table">Category:</p>{product.Category}</td>
+                  <td style={{ color: "#3F3F3F" }} className="Priority"><p className="labels_table">Priority:</p>{product.Priority}</td>
+                  <td  style={{ color: "#3F3F3F" }}className="Department"><p className="labels_table">Dept:</p>{product.Department}</td>
+                  <td style={{ color: "#3F3F3F" }} className="Location"><p className="labels_table">Location:</p>{product.Location}</td>
                   <td style={{ color: "#00284C" }}><p className="labels_table">Status</p><b>{product.Status}</b></td>
                   <td>
                     <button className="startbutton" onClick={(event) => handleStartClick(event, product._id)}>Start</button>
@@ -295,7 +341,7 @@ export default function ProjectList() {
         
       </form>
       <div className="paging">
-  <nav aria-label="Page navigation example">
+  <nav aria-label="Pagenavigationexample">
     <ul className="pagination">
       <li className="page-item">
         <button
